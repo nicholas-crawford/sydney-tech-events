@@ -25,11 +25,15 @@ export type Event = {
   sources: { name: string; url: string }[];
 };
 
-/** Adapter pattern: every source exposes the same two steps. */
-export type Adapter = {
+/**
+ * Adapter pattern: every source exposes the same two steps.
+ * Raw is whatever the source's fetch produces (feed text, scraped records…);
+ * normalise is pure, so it can be tested against saved fixtures.
+ */
+export type Adapter<Raw = unknown> = {
   name: string;
   /** Lower wins when choosing primaryUrl (organiser 0, RSVP platform 1, aggregator 2). */
   rank: number;
-  fetch(): Promise<string[]>;
-  normalise(raw: string[]): SourceListing[];
+  fetch(): Promise<Raw>;
+  normalise(raw: Raw): SourceListing[];
 };

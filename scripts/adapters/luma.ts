@@ -1,5 +1,6 @@
 import ical from "node-ical";
 import { fetchAllText } from "../http.ts";
+import { inSydney } from "../scope.ts";
 import type { Adapter, SourceListing } from "../types.ts";
 
 /**
@@ -17,28 +18,8 @@ const FEEDS = [
   { url: "https://api.luma.com/ics/get?entity=calendar&id=cal-BExqrda4iPuEqSg", curated: true },
 ];
 
-// Rough Greater Sydney bounding box (Penrith–coast, Hornsby–Sutherland).
-const SYDNEY = { latMin: -34.2, latMax: -33.4, lonMin: 150.5, lonMax: 151.4 };
-
 type ParamValue = string | { val: string };
 const text = (v: ParamValue | undefined) => (typeof v === "object" ? v.val : v)?.trim();
-
-function inSydney(
-  geo: { lat: number; lon: number } | undefined,
-  location?: string,
-  title?: string,
-) {
-  if (geo) {
-    return (
-      geo.lat >= SYDNEY.latMin &&
-      geo.lat <= SYDNEY.latMax &&
-      geo.lon >= SYDNEY.lonMin &&
-      geo.lon <= SYDNEY.lonMax
-    );
-  }
-  // No coordinates (often online or hidden address): only keep if it says Sydney/NSW.
-  return /\b(sydney|nsw)\b/i.test(`${location ?? ""} ${title ?? ""}`);
-}
 
 /**
  * node-ical parses DATE-only values as midnight in the *machine's* timezone, so the
@@ -48,7 +29,7 @@ function inSydney(
 const sydneyAllDayStart = (d: Date) =>
   new Date(Date.UTC(d.getFullYear(), d.getMonth(), d.getDate(), 1)).toISOString();
 
-export const luma: Adapter = {
+export const luma: Adapter<string[]> = {
   name: "Luma",
   rank: 1,
 

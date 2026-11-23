@@ -1,75 +1,12 @@
 import { createHash } from "node:crypto";
 import { readFile, writeFile } from "node:fs/promises";
+import { eventbrite } from "./adapters/eventbrite.ts";
 import { luma } from "./adapters/luma.ts";
+import { isAllowed, isBlocked, sydneyDate, WINDOW_END } from "./scope.ts";
 import type { Adapter, Event, SourceListing } from "./types.ts";
 
-const ADAPTERS: Adapter[] = [luma];
+const ADAPTERS: Adapter[] = [luma, eventbrite];
 const OUT = new URL("../public/", import.meta.url);
-
-// Window: now → end of 2026 in Sydney (AEDT, UTC+11).
-const WINDOW_END = new Date("2026-12-31T23:59:59+11:00");
-
-// Tech scoping. Matched as whole words against the lowercased title.
-const ALLOW = [
-  "ai",
-  "ml",
-  "llm",
-  "grok",
-  "bot",
-  "bots",
-  "agent",
-  "agents",
-  "agentic",
-  "neurips",
-  "codex",
-  "claude",
-  "openai",
-  "nvidia",
-  "aws",
-  "cloud",
-  "devfest",
-  "android",
-  "ios",
-  "web",
-  "javascript",
-  "typescript",
-  "react",
-  "python",
-  "rust",
-  "data",
-  "devops",
-  "security",
-  "cyber",
-  "hackathon",
-  "build night",
-  "coding",
-  "code",
-  "developer",
-  "developers",
-  "engineering",
-  "engineer",
-  "tech",
-  "startup",
-  "startups",
-  "founder",
-  "founders",
-  "vc",
-  "saas",
-  "product",
-  "design",
-  "designer",
-  "red teaming",
-  "research",
-  "researchers",
-  "frontier",
-  "fintech",
-  "notion",
-];
-const BLOCK = ["run club", "book club", "padel", "philosophy", "bday", "birthday", "surf"];
-
-const sydneyDate = new Intl.DateTimeFormat("en-CA", { timeZone: "Australia/Sydney" });
-const wordMatch = (title: string, words: string[]) =>
-  words.some((w) => new RegExp(`\\b${w}\\b`, "i").test(title));
 
 const normaliseTitle = (title: string) =>
   title
@@ -81,17 +18,14 @@ const normaliseTitle = (title: string) =>
 
 const eventId = (l: SourceListing) =>
   createHash("sha1")
-    .update(`${normaliseTitle(l.title)}|${sydneyDate.format(new Date(l.start))}`)
+    .update(`${normaliseTitle(l.title)}|${sydneyDate(new Date(l.start))}`)
     .digest("hex")
     .slice(0, 12);
 
 function inScope(l: SourceListing, now: Date) {
   const start = new Date(l.start);
   return (
-    start >= now &&
-    start <= WINDOW_END &&
-    (l.curated || wordMatch(l.title, ALLOW)) &&
-    !wordMatch(l.title, BLOCK)
+    start >= now && start <= WINDOW_END && (l.curated || isAllowed(l.title)) && !isBlocked(l.title)
   );
 }
 

@@ -1,7 +1,5 @@
 {
-  "uniqueEvents": 39,
-  "sources": [
-    "Luma"
-  ],
-  "generatedAt": "2026-11-23T09:04:08.645Z"
+  "uniqueEvents": 52,
+  "sources": ["Luma", "Eventbrite"],
+  "generatedAt": "2026-11-23T09:10:47.516Z"
 }

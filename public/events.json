@@ -14,6 +14,21 @@
     ]
   },
   {
+    "id": "aa79a3d65c95",
+    "title": "Free-Style Canva Design Workshop for Beginners | Sydney",
+    "start": "2026-11-24T03:35:00.000Z",
+    "end": "2026-11-24T04:30:00.000Z",
+    "allDay": false,
+    "venue": "La Lingua Language School, Level 6/770 George St, 2000 Haymarket, Haymarket",
+    "primaryUrl": "https://www.eventbrite.com.au/e/free-style-canva-design-workshop-for-beginners-sydney-tickets-2004753149637",
+    "sources": [
+      {
+        "name": "Eventbrite",
+        "url": "https://www.eventbrite.com.au/e/free-style-canva-design-workshop-for-beginners-sydney-tickets-2004753149637"
+      }
+    ]
+  },
+  {
     "id": "94ad3b2b2087",
     "title": "FUN Sydney: The Failures Behind The Headlines",
     "start": "2026-11-24T06:30:00.000Z",
@@ -61,6 +76,21 @@
     ]
   },
   {
+    "id": "0f5877ae5124",
+    "title": "Material Needs of AI Hardware Industry Roundtable",
+    "start": "2026-11-25T02:30:00.000Z",
+    "end": "2026-11-25T04:30:00.000Z",
+    "allDay": false,
+    "venue": "Cicada Innovations, 4 Cornwallis Street, Eveleigh, NSW 2015, Eveleigh",
+    "primaryUrl": "https://www.eventbrite.com.au/e/material-needs-of-ai-hardware-industry-roundtable-tickets-2004200632042",
+    "sources": [
+      {
+        "name": "Eventbrite",
+        "url": "https://www.eventbrite.com.au/e/material-needs-of-ai-hardware-industry-roundtable-tickets-2004200632042"
+      }
+    ]
+  },
+  {
     "id": "27ab620c3999",
     "title": "Grok Bot Sydney Meetup",
     "start": "2026-11-25T06:30:00.000Z",
@@ -100,6 +130,21 @@
       {
         "name": "Luma",
         "url": "https://luma.com/event/evt-mOxmffrlDwNgrol"
+      }
+    ]
+  },
+  {
+    "id": "993f9fdbd448",
+    "title": "Semiconductors and AI: Edge AI",
+    "start": "2026-11-25T22:30:00.000Z",
+    "end": "2026-11-26T00:00:00.000Z",
+    "allDay": false,
+    "venue": "Cicada Innovations, 4 Cornwallis Street, Eveleigh, NSW 2015, Eveleigh",
+    "primaryUrl": "https://www.eventbrite.com.au/e/semiconductors-and-ai-edge-ai-tickets-1992538619649",
+    "sources": [
+      {
+        "name": "Eventbrite",
+        "url": "https://www.eventbrite.com.au/e/semiconductors-and-ai-edge-ai-tickets-1992538619649"
       }
     ]
   },
@@ -148,6 +193,36 @@
     ]
   },
   {
+    "id": "ee2e7b2f2673",
+    "title": "Data Centres: Hidden in Plain Sight (UNE Sydney Public Talk #2, Hybrid)",
+    "start": "2026-11-26T05:00:00.000Z",
+    "end": "2026-11-26T07:30:00.000Z",
+    "allDay": false,
+    "venue": "UNE Sydney, 28 George Street, Parramatta, NSW 2150, Parramatta",
+    "primaryUrl": "https://www.eventbrite.com.au/e/data-centres-hidden-in-plain-sight-une-sydney-public-talk-2-hybrid-tickets-2003896560556",
+    "sources": [
+      {
+        "name": "Eventbrite",
+        "url": "https://www.eventbrite.com.au/e/data-centres-hidden-in-plain-sight-une-sydney-public-talk-2-hybrid-tickets-2003896560556"
+      }
+    ]
+  },
+  {
+    "id": "9235d4f2b275",
+    "title": "Sydney Monthly Social Tech Meetup",
+    "start": "2026-11-26T06:30:00.000Z",
+    "end": "2026-11-26T09:30:00.000Z",
+    "allDay": false,
+    "venue": "Mountain Goat Newtown, 435 King Street, Newtown, NSW 2042, Newtown",
+    "primaryUrl": "https://www.eventbrite.com.au/e/sydney-monthly-social-tech-meetup-tickets-1996322419095",
+    "sources": [
+      {
+        "name": "Eventbrite",
+        "url": "https://www.eventbrite.com.au/e/sydney-monthly-social-tech-meetup-tickets-1996322419095"
+      }
+    ]
+  },
+  {
     "id": "65f623934ed4",
     "title": "GTM ANZ End of Year Drinks · Sydney · 26 Nov 2026",
     "start": "2026-11-26T07:00:00.000Z",
@@ -158,6 +233,20 @@
       {
         "name": "Luma",
         "url": "https://luma.com/event/evt-tVCToIgU9CwchOB"
+      }
+    ]
+  },
+  {
+    "id": "e7b244ade515",
+    "title": "Agile Tour 2026",
+    "start": "2026-11-26T21:30:00.000Z",
+    "allDay": false,
+    "venue": "level 2/345 George St, 345 George Street, #level 2, Sydney, NSW 2000, Sydney",
+    "primaryUrl": "https://www.eventbrite.com.au/e/agile-tour-2026-tickets-1977676731341",
+    "sources": [
+      {
+        "name": "Eventbrite",
+        "url": "https://www.eventbrite.com.au/e/agile-tour-2026-tickets-1977676731341"
       }
     ]
   },
@@ -173,6 +262,21 @@
       {
         "name": "Luma",
         "url": "https://luma.com/event/evt-aa84pSDMAUpjzn1"
+      }
+    ]
+  },
+  {
+    "id": "e4bbe9e82cc1",
+    "title": "AI Singularity Syndicate Monthly Meetup",
+    "start": "2026-11-27T07:00:00.000Z",
+    "end": "2026-11-27T09:30:00.000Z",
+    "allDay": false,
+    "venue": "Australian Catholic University, North Sydney Campus, 40 Edward Street, North Sydney, NSW 2060, North Sydney",
+    "primaryUrl": "https://www.eventbrite.com.au/e/ai-singularity-syndicate-monthly-meetup-tickets-2004177230046",
+    "sources": [
+      {
+        "name": "Eventbrite",
+        "url": "https://www.eventbrite.com.au/e/ai-singularity-syndicate-monthly-meetup-tickets-2004177230046"
       }
     ]
   },
@@ -202,6 +306,21 @@
       {
         "name": "Luma",
         "url": "https://luma.com/event/evt-3Lz0ROwMhS1HDPz"
+      }
+    ]
+  },
+  {
+    "id": "91e66d3daeb5",
+    "title": "AI for Smart Grids and Renewable Energy Systems Workshop",
+    "start": "2026-12-01T02:00:00.000Z",
+    "end": "2026-12-01T06:00:00.000Z",
+    "allDay": false,
+    "venue": "University of Wollongong (UOW), Sydney CBD campus, 201 Sussex Street, #Level 2, Sydney, NSW 2000, Sydney",
+    "primaryUrl": "https://www.eventbrite.com/e/ai-for-smart-grids-and-renewable-energy-systems-workshop-tickets-2004093869713",
+    "sources": [
+      {
+        "name": "Eventbrite",
+        "url": "https://www.eventbrite.com/e/ai-for-smart-grids-and-renewable-energy-systems-workshop-tickets-2004093869713"
       }
     ]
   },
@@ -354,6 +473,36 @@
     ]
   },
   {
+    "id": "cd42886ab061",
+    "title": "AI VIDEO ‘SUMMIT’",
+    "start": "2026-12-07T21:30:00.000Z",
+    "end": "2026-12-08T06:30:00.000Z",
+    "allDay": false,
+    "venue": "Sheraton Grand Sydney Hyde Park, 161 Elizabeth Street, Sydney, NSW 2000, Sydney",
+    "primaryUrl": "https://www.eventbrite.com.au/e/ai-video-summit-tickets-2001112811287",
+    "sources": [
+      {
+        "name": "Eventbrite",
+        "url": "https://www.eventbrite.com.au/e/ai-video-summit-tickets-2001112811287"
+      }
+    ]
+  },
+  {
+    "id": "e1f04cd4d23f",
+    "title": "Agile Project Management Masterclass – 1 Day Course | Sydney",
+    "start": "2026-12-07T22:00:00.000Z",
+    "end": "2026-12-08T06:00:00.000Z",
+    "allDay": false,
+    "venue": "Regus Australia Management Pty Ltd, 52 Martin Place#23, 61(0) 2 80155605, Sydney, NSW 2000, Sydney",
+    "primaryUrl": "https://www.eventbrite.com/e/agile-project-management-masterclass-1-day-course-sydney-tickets-1998875963816",
+    "sources": [
+      {
+        "name": "Eventbrite",
+        "url": "https://www.eventbrite.com/e/agile-project-management-masterclass-1-day-course-sydney-tickets-1998875963816"
+      }
+    ]
+  },
+  {
     "id": "b37f3f14a3e0",
     "title": "Codex Build Night with AWS and OpenAI",
     "start": "2026-12-08T06:30:00.000Z",
@@ -468,6 +617,21 @@
     ]
   },
   {
+    "id": "f3e55b07a47e",
+    "title": "Tech Founders & Investors: Pitch & Connect I Sydney",
+    "start": "2026-12-08T07:00:00.000Z",
+    "end": "2026-12-08T10:00:00.000Z",
+    "allDay": false,
+    "venue": "Harbour View Hotel, The Rocks, 18 Lower Fort Street, The Rocks, NSW 2000, The Rocks",
+    "primaryUrl": "https://www.eventbrite.com/e/tech-founders-investors-pitch-connect-i-sydney-tickets-2004865059362",
+    "sources": [
+      {
+        "name": "Eventbrite",
+        "url": "https://www.eventbrite.com/e/tech-founders-investors-pitch-connect-i-sydney-tickets-2004865059362"
+      }
+    ]
+  },
+  {
     "id": "5d291b45888f",
     "title": "Odyssey After Hours: NeurIPS 2026",
     "start": "2026-12-08T07:30:00.000Z",
@@ -525,6 +689,21 @@
     ]
   },
   {
+    "id": "1e0d822d7de2",
+    "title": "Data & Analytics Wednesday - December 2026",
+    "start": "2026-12-09T07:00:00.000Z",
+    "end": "2026-12-09T09:00:00.000Z",
+    "allDay": false,
+    "venue": "World Square Bar, 644 George Street, #33, Sydney, NSW 2000, Sydney",
+    "primaryUrl": "https://www.eventbrite.com/e/data-analytics-wednesday-december-2026-tickets-2005182139758",
+    "sources": [
+      {
+        "name": "Eventbrite",
+        "url": "https://www.eventbrite.com/e/data-analytics-wednesday-december-2026-tickets-2005182139758"
+      }
+    ]
+  },
+  {
     "id": "9fc01e0ef2e1",
     "title": "NeurIPS Yacht Party by Abaka AI",
     "start": "2026-12-09T07:45:00.000Z",
@@ -564,6 +743,21 @@
       {
         "name": "Luma",
         "url": "https://luma.com/event/evt-hH3nzCSRgIRk8cA"
+      }
+    ]
+  },
+  {
+    "id": "19b1b5f87920",
+    "title": "AI and Creativity in Australia: Cognition, Policy, and Practice",
+    "start": "2026-12-10T23:00:00.000Z",
+    "end": "2026-12-11T08:00:00.000Z",
+    "allDay": false,
+    "venue": "UNSW School of Art & Design, Oxford St & Greens Rd, Paddington, NSW 2021, Paddington",
+    "primaryUrl": "https://www.eventbrite.com.au/e/ai-and-creativity-in-australia-cognition-policy-and-practice-tickets-2002108887578",
+    "sources": [
+      {
+        "name": "Eventbrite",
+        "url": "https://www.eventbrite.com.au/e/ai-and-creativity-in-australia-cognition-policy-and-practice-tickets-2002108887578"
       }
     ]
   }
