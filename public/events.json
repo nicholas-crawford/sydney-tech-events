@@ -147,6 +147,21 @@
     ]
   },
   {
+    "id": "ad54a2a33d6e",
+    "title": "afk club: JavaScript Code Art for Beginners",
+    "start": "2026-11-25T07:00:00.000Z",
+    "end": "2026-11-25T08:30:00.000Z",
+    "allDay": false,
+    "venue": "Waverley Library, 32-48 Denison St, Bondi Junction NSW 2022, Australia",
+    "primaryUrl": "https://events.humanitix.com/afk-club-code-art-for-beginners",
+    "sources": [
+      {
+        "name": "Humanitix",
+        "url": "https://events.humanitix.com/afk-club-code-art-for-beginners"
+      }
+    ]
+  },
+  {
     "id": "6714b2dc4948",
     "title": "JR Talks Vol. 11 | What’s Next for IT Careers in 2027?",
     "start": "2026-11-25T09:00:00.000Z",
@@ -157,6 +172,21 @@
       {
         "name": "Meetup",
         "url": "https://www.meetup.com/jracademy/events/317280598/"
+      }
+    ]
+  },
+  {
+    "id": "993f9fdbd448",
+    "title": "Semiconductors and AI: Edge AI",
+    "start": "2026-11-25T22:30:00.000Z",
+    "end": "2026-11-26T00:00:00.000Z",
+    "allDay": false,
+    "venue": "Cicada Innovations, 4 Cornwallis Street, Eveleigh, NSW 2015, Eveleigh",
+    "primaryUrl": "https://www.eventbrite.com.au/e/semiconductors-and-ai-edge-ai-tickets-1992538619649",
+    "sources": [
+      {
+        "name": "Eventbrite",
+        "url": "https://www.eventbrite.com.au/e/semiconductors-and-ai-edge-ai-tickets-1992538619649"
       }
     ]
   },
@@ -253,11 +283,16 @@
     "start": "2026-11-26T06:30:00.000Z",
     "end": "2026-11-26T09:30:00.000Z",
     "allDay": false,
+    "venue": "Mountain Goat Newtown, 435 King Street, Newtown, NSW 2042, Newtown",
     "primaryUrl": "https://www.meetup.com/sydney-tech-meetups/events/316686684/",
     "sources": [
       {
         "name": "Meetup",
         "url": "https://www.meetup.com/sydney-tech-meetups/events/316686684/"
+      },
+      {
+        "name": "Eventbrite",
+        "url": "https://www.eventbrite.com.au/e/sydney-monthly-social-tech-meetup-tickets-1996322419095"
       }
     ]
   },
@@ -385,6 +420,21 @@
       {
         "name": "Meetup",
         "url": "https://www.meetup.com/sydney-testers/events/317525091/"
+      }
+    ]
+  },
+  {
+    "id": "342305372c85",
+    "title": "Public Lecture with Professor Ruha Benjamin",
+    "start": "2026-11-30T06:30:00.000Z",
+    "end": "2026-11-30T09:00:00.000Z",
+    "allDay": false,
+    "venue": "Western Sydney University - Peter Shergold Building - Level 9, 169 Macquarie St, Parramatta NSW 2150, Australia",
+    "primaryUrl": "https://events.humanitix.com/public-lecture-with-professor-ruha-benjamin",
+    "sources": [
+      {
+        "name": "Humanitix",
+        "url": "https://events.humanitix.com/public-lecture-with-professor-ruha-benjamin"
       }
     ]
   },
