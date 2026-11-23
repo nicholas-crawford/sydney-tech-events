@@ -1,0 +1,570 @@
+[
+  {
+    "id": "f09b470123c1",
+    "title": "EDGE by Ampere",
+    "start": "2026-11-23T22:00:00.000Z",
+    "end": "2026-11-24T08:00:00.000Z",
+    "allDay": false,
+    "primaryUrl": "https://luma.com/event/evt-3CkzjMhVAhfnESr",
+    "sources": [
+      {
+        "name": "Luma",
+        "url": "https://luma.com/event/evt-3CkzjMhVAhfnESr"
+      }
+    ]
+  },
+  {
+    "id": "94ad3b2b2087",
+    "title": "FUN Sydney: The Failures Behind The Headlines",
+    "start": "2026-11-24T06:30:00.000Z",
+    "end": "2026-11-24T09:00:00.000Z",
+    "allDay": false,
+    "primaryUrl": "https://luma.com/event/calev-pYvworSKprMHECB",
+    "sources": [
+      {
+        "name": "Luma",
+        "url": "https://luma.com/event/calev-pYvworSKprMHECB"
+      },
+      {
+        "name": "Luma",
+        "url": "https://luma.com/event/calev-wckrSaKAb53T8Uc"
+      }
+    ]
+  },
+  {
+    "id": "b77f7b50a659",
+    "title": "Sydney Tech Pickleball",
+    "start": "2026-11-24T07:00:00.000Z",
+    "end": "2026-11-24T08:30:00.000Z",
+    "allDay": false,
+    "venue": "House of Pickle - Darling Harbour, Level 4/14 Darling Dr, Sydney NSW 2000, Australia",
+    "primaryUrl": "https://luma.com/event/evt-le0gMtDGnAWDkcR",
+    "sources": [
+      {
+        "name": "Luma",
+        "url": "https://luma.com/event/evt-le0gMtDGnAWDkcR"
+      }
+    ]
+  },
+  {
+    "id": "40e07baa30ed",
+    "title": "Investor Exchange: Founder x Investor One-on-One Session",
+    "start": "2026-11-24T23:30:00.000Z",
+    "end": "2026-11-25T01:30:00.000Z",
+    "allDay": false,
+    "primaryUrl": "https://luma.com/event/evt-pxHrtXPjsDZ7b24",
+    "sources": [
+      {
+        "name": "Luma",
+        "url": "https://luma.com/event/evt-pxHrtXPjsDZ7b24"
+      }
+    ]
+  },
+  {
+    "id": "27ab620c3999",
+    "title": "Grok Bot Sydney Meetup",
+    "start": "2026-11-25T06:30:00.000Z",
+    "end": "2026-11-25T09:30:00.000Z",
+    "allDay": false,
+    "venue": "Dovetail Research Pty. Ltd., 276 Devonshire St, Surry Hills NSW 2010, Australia",
+    "primaryUrl": "https://luma.com/event/evt-jBZ9rPFivDGe0rD",
+    "sources": [
+      {
+        "name": "Luma",
+        "url": "https://luma.com/event/evt-jBZ9rPFivDGe0rD"
+      }
+    ]
+  },
+  {
+    "id": "575d84e570ec",
+    "title": "Reapra - End of Year Party!",
+    "start": "2026-11-25T06:30:00.000Z",
+    "end": "2026-11-25T10:30:00.000Z",
+    "allDay": false,
+    "primaryUrl": "https://luma.com/event/evt-IBRG7rQv4xgHreX",
+    "sources": [
+      {
+        "name": "Luma",
+        "url": "https://luma.com/event/evt-IBRG7rQv4xgHreX"
+      }
+    ]
+  },
+  {
+    "id": "79f4f3d0f1e6",
+    "title": "ASEAN Flavours Social #1 Laos",
+    "start": "2026-11-25T07:00:00.000Z",
+    "end": "2026-11-25T08:30:00.000Z",
+    "allDay": false,
+    "primaryUrl": "https://luma.com/event/evt-mOxmffrlDwNgrol",
+    "sources": [
+      {
+        "name": "Luma",
+        "url": "https://luma.com/event/evt-mOxmffrlDwNgrol"
+      }
+    ]
+  },
+  {
+    "id": "e14817eb1a6a",
+    "title": "lets have coffee | uts startups x archangel vc x tidal vc",
+    "start": "2026-11-26T00:00:00.000Z",
+    "end": "2026-11-26T02:00:00.000Z",
+    "allDay": false,
+    "venue": "UTS Startups, 3 Broadway, Ultimo NSW 2007, Australia",
+    "primaryUrl": "https://luma.com/event/evt-BHCx6CwvjBoDUuV",
+    "sources": [
+      {
+        "name": "Luma",
+        "url": "https://luma.com/event/evt-BHCx6CwvjBoDUuV"
+      }
+    ]
+  },
+  {
+    "id": "64bb3c0ccda6",
+    "title": "Sydney - One Roof Women's National Conference (#OWNCon)",
+    "start": "2026-11-26T00:00:00.000Z",
+    "end": "2026-11-26T05:15:00.000Z",
+    "allDay": false,
+    "primaryUrl": "https://luma.com/event/evt-NUcaqDnK6qEr1lj",
+    "sources": [
+      {
+        "name": "Luma",
+        "url": "https://luma.com/event/evt-NUcaqDnK6qEr1lj"
+      }
+    ]
+  },
+  {
+    "id": "9de63ea6b0ae",
+    "title": "Founders Unfiltered: In conversation with Karen Lawson",
+    "start": "2026-11-26T05:00:00.000Z",
+    "end": "2026-11-26T06:30:00.000Z",
+    "allDay": false,
+    "venue": "Stone & Chalk Tech Central, Level 1/477 Pitt St, Haymarket NSW 2000, Australia",
+    "primaryUrl": "https://luma.com/event/evt-5vu9G96rBCQ8sOz",
+    "sources": [
+      {
+        "name": "Luma",
+        "url": "https://luma.com/event/evt-5vu9G96rBCQ8sOz"
+      }
+    ]
+  },
+  {
+    "id": "65f623934ed4",
+    "title": "GTM ANZ End of Year Drinks · Sydney · 26 Nov 2026",
+    "start": "2026-11-26T07:00:00.000Z",
+    "end": "2026-11-26T10:00:00.000Z",
+    "allDay": false,
+    "primaryUrl": "https://luma.com/event/evt-tVCToIgU9CwchOB",
+    "sources": [
+      {
+        "name": "Luma",
+        "url": "https://luma.com/event/evt-tVCToIgU9CwchOB"
+      }
+    ]
+  },
+  {
+    "id": "36edef2ba973",
+    "title": "Fast Start 2027: How to win enterprise business",
+    "start": "2026-11-27T04:00:00.000Z",
+    "end": "2026-11-27T07:00:00.000Z",
+    "allDay": false,
+    "venue": "Greenhouse, Level 3/180 George St, Sydney NSW 2000, Australia",
+    "primaryUrl": "https://luma.com/event/evt-aa84pSDMAUpjzn1",
+    "sources": [
+      {
+        "name": "Luma",
+        "url": "https://luma.com/event/evt-aa84pSDMAUpjzn1"
+      }
+    ]
+  },
+  {
+    "id": "2b42f5595ff7",
+    "title": "Sydney | Claude Artifacts Workshop",
+    "start": "2026-11-30T05:30:00.000Z",
+    "end": "2026-11-30T08:30:00.000Z",
+    "allDay": false,
+    "primaryUrl": "https://luma.com/event/evt-gENBNcKcbWdVueR",
+    "sources": [
+      {
+        "name": "Luma",
+        "url": "https://luma.com/event/evt-gENBNcKcbWdVueR"
+      }
+    ]
+  },
+  {
+    "id": "4ac5c354e30d",
+    "title": "AI Makers Expo Sydney: Australia’s Early-Stage AI Showcase",
+    "start": "2026-12-01T01:30:00.000Z",
+    "end": "2026-12-01T08:00:00.000Z",
+    "allDay": false,
+    "venue": "Flex by ISPT The Collider, 477 Pitt St, Haymarket NSW 2000, Australia",
+    "primaryUrl": "https://luma.com/event/evt-3Lz0ROwMhS1HDPz",
+    "sources": [
+      {
+        "name": "Luma",
+        "url": "https://luma.com/event/evt-3Lz0ROwMhS1HDPz"
+      }
+    ]
+  },
+  {
+    "id": "a8e682447bf6",
+    "title": "DevFest Extended: Android for the Agentic Era",
+    "start": "2026-12-01T06:30:00.000Z",
+    "end": "2026-12-01T09:30:00.000Z",
+    "allDay": false,
+    "venue": "Google Sydney - One Darling Island, 1 Darling Island Rd, Pyrmont NSW 2009, Australia",
+    "primaryUrl": "https://luma.com/event/evt-G3RfbPSXYRUb497",
+    "sources": [
+      {
+        "name": "Luma",
+        "url": "https://luma.com/event/evt-G3RfbPSXYRUb497"
+      }
+    ]
+  },
+  {
+    "id": "fb717191a8f9",
+    "title": "A Storytellers Night with Notion x Sachin & Adam",
+    "start": "2026-12-02T06:30:00.000Z",
+    "end": "2026-12-02T10:00:00.000Z",
+    "allDay": false,
+    "venue": "Heaps Normal Health Club, 2/10 Brompton St, Marrickville NSW 2042, Australia",
+    "primaryUrl": "https://luma.com/event/evt-MXchFFeWEOYAqXr",
+    "sources": [
+      {
+        "name": "Luma",
+        "url": "https://luma.com/event/evt-MXchFFeWEOYAqXr"
+      }
+    ]
+  },
+  {
+    "id": "f0a960619b62",
+    "title": "fireside chat: making money as a designer, content creator and founder",
+    "start": "2026-12-02T07:00:00.000Z",
+    "end": "2026-12-02T09:00:00.000Z",
+    "allDay": false,
+    "venue": "Michael Crouch Innovation Centre, Level G, Hilmer Building (E10), Union Rd, UNSW Sydney, Kensington NSW 2033, Australia",
+    "primaryUrl": "https://luma.com/event/evt-NRSlLVdZK5qb85a",
+    "sources": [
+      {
+        "name": "Luma",
+        "url": "https://luma.com/event/evt-NRSlLVdZK5qb85a"
+      }
+    ]
+  },
+  {
+    "id": "cac0f7c678bd",
+    "title": "Startup Coffee Social #39",
+    "start": "2026-12-03T21:00:00.000Z",
+    "end": "2026-12-03T22:30:00.000Z",
+    "allDay": false,
+    "venue": "Tank Stream Suites, Martin Place, Level 31 & 23/52 Martin Pl, Sydney NSW 2000, Australia",
+    "primaryUrl": "https://luma.com/event/evt-dZJmB4g5THxe5HR",
+    "sources": [
+      {
+        "name": "Luma",
+        "url": "https://luma.com/event/evt-dZJmB4g5THxe5HR"
+      }
+    ]
+  },
+  {
+    "id": "a69b363cfed0",
+    "title": "Matcha Monday: NeurIPS",
+    "start": "2026-12-06T21:00:00.000Z",
+    "end": "2026-12-06T22:00:00.000Z",
+    "allDay": false,
+    "venue": "Parami, Shop 101/21 Alberta St, Sydney NSW 2000, Australia",
+    "primaryUrl": "https://luma.com/event/evt-5a1YceteKKjc37c",
+    "sources": [
+      {
+        "name": "Luma",
+        "url": "https://luma.com/event/evt-5a1YceteKKjc37c"
+      }
+    ]
+  },
+  {
+    "id": "2aa0ad1057ee",
+    "title": "Prolific NeurIPS: Rooftop Welcome Party",
+    "start": "2026-12-07T06:00:00.000Z",
+    "end": "2026-12-07T09:00:00.000Z",
+    "allDay": false,
+    "primaryUrl": "https://luma.com/event/evt-xXJWVtamwf4LAed",
+    "sources": [
+      {
+        "name": "Luma",
+        "url": "https://luma.com/event/evt-xXJWVtamwf4LAed"
+      }
+    ]
+  },
+  {
+    "id": "788db258e864",
+    "title": "The State of Frontier AI Evaluation and Red Teaming",
+    "start": "2026-12-07T06:30:00.000Z",
+    "end": "2026-12-07T09:00:00.000Z",
+    "allDay": false,
+    "venue": "IAG, Darling Park, Tower Two, 201 Sussex St, Sydney NSW 2000, Australia",
+    "primaryUrl": "https://luma.com/event/evt-2RcxRiEAjwRRFIe",
+    "sources": [
+      {
+        "name": "Luma",
+        "url": "https://luma.com/event/evt-2RcxRiEAjwRRFIe"
+      }
+    ]
+  },
+  {
+    "id": "ddd5f111204e",
+    "title": "NeurIPS 2026 Warm Up at Machine Hall",
+    "start": "2026-12-07T07:00:00.000Z",
+    "end": "2026-12-07T10:00:00.000Z",
+    "allDay": false,
+    "primaryUrl": "https://luma.com/event/evt-miVjlPRLO9hnnqH",
+    "sources": [
+      {
+        "name": "Luma",
+        "url": "https://luma.com/event/evt-miVjlPRLO9hnnqH"
+      }
+    ]
+  },
+  {
+    "id": "5a6370455b7a",
+    "title": "Reactor & NVIDIA NeurIPS Cocktail Hour",
+    "start": "2026-12-07T07:00:00.000Z",
+    "end": "2026-12-07T10:30:00.000Z",
+    "allDay": false,
+    "venue": "Vogue Cafe Sydney, Unit 5/31 Wheat Rd, Sydney NSW 2000, Australia",
+    "primaryUrl": "https://luma.com/event/evt-UkKCMYnhhasoWXZ",
+    "sources": [
+      {
+        "name": "Luma",
+        "url": "https://luma.com/event/evt-UkKCMYnhhasoWXZ"
+      }
+    ]
+  },
+  {
+    "id": "153c17d0e3a9",
+    "title": "Founder Match Run: Sydney",
+    "start": "2026-12-07T20:30:00.000Z",
+    "end": "2026-12-07T21:15:00.000Z",
+    "allDay": false,
+    "venue": "Circular Quay Harbour Lookout, Circular Quay W, The Rocks NSW 2000, Australia",
+    "primaryUrl": "https://luma.com/event/evt-AoHuE2gRfaTlZ78",
+    "sources": [
+      {
+        "name": "Luma",
+        "url": "https://luma.com/event/evt-AoHuE2gRfaTlZ78"
+      }
+    ]
+  },
+  {
+    "id": "b37f3f14a3e0",
+    "title": "Codex Build Night with AWS and OpenAI",
+    "start": "2026-12-08T06:30:00.000Z",
+    "end": "2026-12-08T09:30:00.000Z",
+    "allDay": false,
+    "primaryUrl": "https://luma.com/event/evt-qTn7KY2z9boQWdj",
+    "sources": [
+      {
+        "name": "Luma",
+        "url": "https://luma.com/event/evt-qTn7KY2z9boQWdj"
+      }
+    ]
+  },
+  {
+    "id": "452412f71a4b",
+    "title": "Prolific NeurIPS: Climb the Sydney Harbour Bridge x AI Networking",
+    "start": "2026-12-08T06:30:00.000Z",
+    "end": "2026-12-08T12:00:00.000Z",
+    "allDay": false,
+    "primaryUrl": "https://luma.com/event/evt-6LYGh6ux2tS9dFT",
+    "sources": [
+      {
+        "name": "Luma",
+        "url": "https://luma.com/event/evt-6LYGh6ux2tS9dFT"
+      }
+    ]
+  },
+  {
+    "id": "0069cf9902ce",
+    "title": "Breakthrough Island: for researchers building the next generation of open source",
+    "start": "2026-12-08T07:00:00.000Z",
+    "end": "2026-12-08T11:00:00.000Z",
+    "allDay": false,
+    "primaryUrl": "https://luma.com/event/evt-WRxHhUrM0TqECq5",
+    "sources": [
+      {
+        "name": "Luma",
+        "url": "https://luma.com/event/evt-WRxHhUrM0TqECq5"
+      }
+    ]
+  },
+  {
+    "id": "9f333cc5b12b",
+    "title": "Dead Reckoning: NeurIPS Happy Hour for Researchers Navigating Without Ground Truth",
+    "start": "2026-12-08T07:00:00.000Z",
+    "end": "2026-12-08T10:00:00.000Z",
+    "allDay": false,
+    "venue": "Australian National Maritime Museum, 2 Murray St, Darling Hbr, Sydney NSW 2000, Australia",
+    "primaryUrl": "https://luma.com/event/evt-DBMqNfUp7wqHlFE",
+    "sources": [
+      {
+        "name": "Luma",
+        "url": "https://luma.com/event/evt-DBMqNfUp7wqHlFE"
+      }
+    ]
+  },
+  {
+    "id": "eec2e0f814bf",
+    "title": "Frontier Field Notes: NeurIPS After Hours",
+    "start": "2026-12-08T07:00:00.000Z",
+    "end": "2026-12-08T10:30:00.000Z",
+    "allDay": false,
+    "venue": "Cicada Innovations, 4 Cornwallis St, Eveleigh NSW 2015, Australia",
+    "primaryUrl": "https://luma.com/event/evt-RZD1JJ9UjjuOQ6h",
+    "sources": [
+      {
+        "name": "Luma",
+        "url": "https://luma.com/event/evt-RZD1JJ9UjjuOQ6h"
+      }
+    ]
+  },
+  {
+    "id": "1d3c369ac0f0",
+    "title": "NeurIPS After Hours with Handshake AI",
+    "start": "2026-12-08T07:00:00.000Z",
+    "end": "2026-12-08T10:00:00.000Z",
+    "allDay": false,
+    "primaryUrl": "https://luma.com/event/evt-2t0ObwnqZofWYMA",
+    "sources": [
+      {
+        "name": "Luma",
+        "url": "https://luma.com/event/evt-2t0ObwnqZofWYMA"
+      }
+    ]
+  },
+  {
+    "id": "175ffe3616d3",
+    "title": "Turing @ NeurIPS: After Hours",
+    "start": "2026-12-08T07:00:00.000Z",
+    "end": "2026-12-08T10:00:00.000Z",
+    "allDay": false,
+    "primaryUrl": "https://luma.com/event/evt-0dybopJE8DL9zoE",
+    "sources": [
+      {
+        "name": "Luma",
+        "url": "https://luma.com/event/evt-0dybopJE8DL9zoE"
+      }
+    ]
+  },
+  {
+    "id": "dbce3ee06328",
+    "title": "Weights & Whiskies: A NeurIPS Night with Gimlet Labs and NVIDIA",
+    "start": "2026-12-08T07:00:00.000Z",
+    "end": "2026-12-08T13:00:00.000Z",
+    "allDay": false,
+    "primaryUrl": "https://luma.com/event/evt-EbJ7YfJdAP1ruD1",
+    "sources": [
+      {
+        "name": "Luma",
+        "url": "https://luma.com/event/evt-EbJ7YfJdAP1ruD1"
+      }
+    ]
+  },
+  {
+    "id": "5d291b45888f",
+    "title": "Odyssey After Hours: NeurIPS 2026",
+    "start": "2026-12-08T07:30:00.000Z",
+    "end": "2026-12-08T10:30:00.000Z",
+    "allDay": false,
+    "primaryUrl": "https://luma.com/event/evt-rjQpz14mSIfQmWu",
+    "sources": [
+      {
+        "name": "Luma",
+        "url": "https://luma.com/event/evt-rjQpz14mSIfQmWu"
+      }
+    ]
+  },
+  {
+    "id": "27aeba655514",
+    "title": "Under the Southern Sky: A Founders' Night at NeurIPS",
+    "start": "2026-12-08T08:00:00.000Z",
+    "end": "2026-12-08T11:30:00.000Z",
+    "allDay": false,
+    "venue": "Chinese Garden of Friendship, Pier Street, Cnr Harbour St, Darling Harbour NSW 2000, Australia",
+    "primaryUrl": "https://luma.com/event/evt-GgbU5E6vtWttPz9",
+    "sources": [
+      {
+        "name": "Luma",
+        "url": "https://luma.com/event/evt-GgbU5E6vtWttPz9"
+      }
+    ]
+  },
+  {
+    "id": "418bd4d411c7",
+    "title": "Cartesia x NeurIPS: After Hours",
+    "start": "2026-12-08T09:00:00.000Z",
+    "end": "2026-12-08T13:00:00.000Z",
+    "allDay": false,
+    "primaryUrl": "https://luma.com/event/evt-DncumQzUO9qo2cz",
+    "sources": [
+      {
+        "name": "Luma",
+        "url": "https://luma.com/event/evt-DncumQzUO9qo2cz"
+      }
+    ]
+  },
+  {
+    "id": "2e1033cae433",
+    "title": "Women Who Codex Sydney | NeurIPS Edition",
+    "start": "2026-12-09T06:00:00.000Z",
+    "end": "2026-12-09T09:00:00.000Z",
+    "allDay": false,
+    "primaryUrl": "https://luma.com/event/evt-mYbugQD3egCLRHg",
+    "sources": [
+      {
+        "name": "Luma",
+        "url": "https://luma.com/event/evt-mYbugQD3egCLRHg"
+      }
+    ]
+  },
+  {
+    "id": "9fc01e0ef2e1",
+    "title": "NeurIPS Yacht Party by Abaka AI",
+    "start": "2026-12-09T07:45:00.000Z",
+    "end": "2026-12-09T11:00:00.000Z",
+    "allDay": false,
+    "primaryUrl": "https://luma.com/event/evt-j2B6EC3fWIwsWeZ",
+    "sources": [
+      {
+        "name": "Luma",
+        "url": "https://luma.com/event/evt-j2B6EC3fWIwsWeZ"
+      }
+    ]
+  },
+  {
+    "id": "63fc069645cc",
+    "title": "FBR ROM NeurIPS AFTERS",
+    "start": "2026-12-10T07:00:00.000Z",
+    "end": "2026-12-10T11:00:00.000Z",
+    "allDay": false,
+    "primaryUrl": "https://luma.com/event/evt-Sv8wzmn085u5n8c",
+    "sources": [
+      {
+        "name": "Luma",
+        "url": "https://luma.com/event/evt-Sv8wzmn085u5n8c"
+      }
+    ]
+  },
+  {
+    "id": "460369196a65",
+    "title": "Vibe Coding Club: Sydney Build Night Presented by Base44",
+    "start": "2026-12-10T07:00:00.000Z",
+    "end": "2026-12-10T10:00:00.000Z",
+    "allDay": false,
+    "venue": "UTS Startups, 3 Broadway, Ultimo NSW 2007, Australia",
+    "primaryUrl": "https://luma.com/event/evt-hH3nzCSRgIRk8cA",
+    "sources": [
+      {
+        "name": "Luma",
+        "url": "https://luma.com/event/evt-hH3nzCSRgIRk8cA"
+      }
+    ]
+  }
+]
