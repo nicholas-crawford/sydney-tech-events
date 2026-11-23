@@ -2,10 +2,11 @@ import { createHash } from "node:crypto";
 import { readFile, writeFile } from "node:fs/promises";
 import { eventbrite } from "./adapters/eventbrite.ts";
 import { luma } from "./adapters/luma.ts";
+import { meetup } from "./adapters/meetup.ts";
 import { isAllowed, isBlocked, sydneyDate, WINDOW_END } from "./scope.ts";
 import type { Adapter, Event, SourceListing } from "./types.ts";
 
-const ADAPTERS: Adapter[] = [luma, eventbrite];
+const ADAPTERS: Adapter[] = [luma, meetup, eventbrite];
 const OUT = new URL("../public/", import.meta.url);
 
 const normaliseTitle = (title: string) =>

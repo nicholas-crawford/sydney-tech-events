@@ -20,8 +20,13 @@ concurrency:
   cancel-in-progress: false
 
 jobs:
-  build:
-    runs-on: ubuntu-latest
+  # Scrape on the self-hosted Mac runner: Eventbrite blocks datacenter IPs (HTTP 405
+  # from GitHub-hosted runners), a residential IP is fine. Never runs on push, so
+  # code changes can't reach the Mac; only schedule/manual runs from this repo do.
+  ingest:
+    if: github.event_name != 'push'
+    runs-on: [self-hosted, sydney-ingest]
+    timeout-minutes: 20
     steps:
       - uses: actions/checkout@v7.0.1
 
@@ -30,15 +35,12 @@ jobs:
           node-version: "24"
           cache: true
 
-      # Only scrape on schedule/manual runs; pushes just redeploy existing data.
       - name: Ingest events
-        if: github.event_name != 'push'
         run: vpx ./scripts/ingest.ts
 
       # Git scraping: commit the data so history shows what changed each week.
       # Commits made with GITHUB_TOKEN don't trigger another push run, so no loop.
       - name: Commit data
-        if: github.event_name != 'push'
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
@@ -50,6 +52,23 @@ jobs:
             git push
           fi
 
+  # Build + deploy on GitHub-hosted runners. Runs even if ingest was skipped (push)
+  # or failed (Mac asleep/offline), deploying whatever data is on main.
+  build:
+    needs: ingest
+    if: ${{ !cancelled() }}
+    runs-on: ubuntu-latest
+    steps:
+      # ref: main, not the triggering SHA, so a fresh ingest commit is included.
+      - uses: actions/checkout@v7.0.1
+        with:
+          ref: main
+
+      - uses: voidzero-dev/setup-vp@v1.22.0
+        with:
+          node-version: "24"
+          cache: true
+
       - run: vp run build
 
       - uses: actions/configure-pages@v6.0.0
@@ -59,6 +78,7 @@ jobs:
 
   deploy:
     needs: build
+    if: ${{ !cancelled() && needs.build.result == 'success' }}
     runs-on: ubuntu-latest
     environment:
       name: github-pages

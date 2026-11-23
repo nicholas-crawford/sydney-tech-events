@@ -54,6 +54,9 @@ Build in this order; demo with however many work:
 
 - Luma feeds: Sydney city discover feed (general-interest, keyword-filtered) and the ANZ Startup Events Calendar (`cal-BExqrda4iPuEqSg`, `curated: true`, skips the allowlist; national, so a Greater Sydney geo bounding box on `GEO` is applied, falling back to "Sydney/NSW" text when there are no coordinates).
 - Eventbrite: scrape `/d/australia--sydney/science-and-tech--events/` (allowed by robots.txt). Two-phase crawl: list pages' JSON-LD (date-only) → pre-filter (window, Sydney geo, keywords) → detail pages' JSON-LD for the real start time with offset. Empty list pages are retried once (Eventbrite serves inconsistent variants); stop after two empty in a row. HTTP 429 → back off per `Retry-After` (cap 60s), retry once; a failing later list page keeps the pages already collected.
+- Eventbrite blocks datacenter IPs (HTTP 405 from GitHub Actions). In CI it falls back to carried data; fresh Eventbrite data needs a run from a residential IP (run ingest locally and push).
+- Meetup: per-group iCal feeds (`/<group>/events/ical/`, not disallowed). Groups = `SEED_GROUPS` ∪ groups discovered from the Sydney technology find page and topic pages (robots.txt disallows the search API/`?source=`/`?keywords=`). Group feeds are `curated`; other-city titles are blocklisted because national groups post them without coordinates.
+- iCal parsing shared in `scripts/ical.ts` (Luma + Meetup).
 - Shared scoping (window, allow/block lists, Sydney bounding box) lives in `scripts/scope.ts`; JSON-LD extraction in `scripts/jsonld.ts` (reuse for Meetup/Humanitix).
 - Note for later dedupe: in the ANZ calendar, `LOCATION` is sometimes an Eventbrite/Humanitix URL, a free cross-source link.
 

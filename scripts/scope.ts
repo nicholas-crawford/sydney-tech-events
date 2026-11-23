@@ -91,6 +91,15 @@ const BLOCK = [
   "tech connect",
   "tea & tech",
   "copy of",
+  "child",
+  "christmas break",
+  // Other cities: national groups/calendars post these without coordinates.
+  "melbourne",
+  "brisbane",
+  "perth",
+  "adelaide",
+  "canberra",
+  "auckland",
 ];
 
 const toPattern = (words: string[]) =>

@@ -1,5 +1,5 @@
-import ical from "node-ical";
 import { fetchAllText } from "../http.ts";
+import { parseIcs } from "../ical.ts";
 import { inSydney } from "../scope.ts";
 import type { Adapter, SourceListing } from "../types.ts";
 
@@ -18,17 +18,6 @@ const FEEDS = [
   { url: "https://api.luma.com/ics/get?entity=calendar&id=cal-BExqrda4iPuEqSg", curated: true },
 ];
 
-type ParamValue = string | { val: string };
-const text = (v: ParamValue | undefined) => (typeof v === "object" ? v.val : v)?.trim();
-
-/**
- * node-ical parses DATE-only values as midnight in the *machine's* timezone, so the
- * UTC instant differs between a laptop in Sydney and a UTC CI runner. Read the local
- * date parts back out and pin it to 01:00Z, which is 11am/12pm the same day in Sydney.
- */
-const sydneyAllDayStart = (d: Date) =>
-  new Date(Date.UTC(d.getFullYear(), d.getMonth(), d.getDate(), 1)).toISOString();
-
 export const luma: Adapter<string[]> = {
   name: "Luma",
   rank: 1,
@@ -38,28 +27,21 @@ export const luma: Adapter<string[]> = {
   normalise(raw) {
     const listings: SourceListing[] = [];
     for (const [i, body] of raw.entries()) {
-      for (const component of Object.values(ical.sync.parseICS(body))) {
-        if (component?.type !== "VEVENT") continue;
-
-        const title = text(component.summary);
-        if (!title) continue;
-
+      for (const e of parseIcs(body)) {
+        if (e.cancelled) continue;
         // LOCATION is a URL when the address is hidden or the event lives elsewhere.
-        const location = text(component.location);
-        if (!inSydney(component.geo, location, title)) continue;
-
-        const allDay = component.datetype === "date";
+        if (!inSydney(e.geo, e.location, e.title)) continue;
 
         // UID is "evt-xxxx@events.lu.ma"; Luma's canonical event URL uses the evt- id.
-        const eventId = component.uid.split("@")[0];
+        const eventId = e.uid.split("@")[0];
 
         listings.push({
           source: "Luma",
-          title,
-          start: allDay ? sydneyAllDayStart(component.start) : component.start.toISOString(),
-          allDay,
-          end: component.end?.toISOString(),
-          venue: location && !location.startsWith("http") ? location : undefined,
+          title: e.title,
+          start: e.start,
+          end: e.end,
+          allDay: e.allDay,
+          venue: e.location && !e.location.startsWith("http") ? e.location : undefined,
           url: `https://luma.com/event/${eventId}`,
           curated: FEEDS[i].curated,
         });
