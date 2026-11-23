@@ -9,6 +9,8 @@ export type SourceListing = {
   url: string;
   /** Date-only event (no time). start is that Sydney date at 01:00Z. */
   allDay?: boolean;
+  /** URLs on other sites that this source says are the same event (e.g. Luma LOCATION). */
+  links?: string[];
   /** Source is already tech-scoped (a curated calendar), so skip the keyword allowlist. */
   curated?: boolean;
 };
@@ -23,6 +25,8 @@ export type Event = {
   allDay?: boolean;
   primaryUrl: string;
   sources: { name: string; url: string }[];
+  /** Listing keys merged into this event (only when >1); use these in overrides.json. */
+  mergedFrom?: string[];
 };
 
 /**

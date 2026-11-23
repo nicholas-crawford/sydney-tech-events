@@ -1,28 +1,14 @@
-import { createHash } from "node:crypto";
 import { readFile, writeFile } from "node:fs/promises";
 import { eventbrite } from "./adapters/eventbrite.ts";
 import { humanitix } from "./adapters/humanitix.ts";
 import { luma } from "./adapters/luma.ts";
 import { meetup } from "./adapters/meetup.ts";
-import { isAllowed, isBlocked, sydneyDate, WINDOW_END } from "./scope.ts";
+import { dedupe, type Overrides } from "./dedupe.ts";
+import { isAllowed, isBlocked, WINDOW_END } from "./scope.ts";
 import type { Adapter, Event, SourceListing } from "./types.ts";
 
 const ADAPTERS: Adapter[] = [luma, meetup, eventbrite, humanitix];
 const OUT = new URL("../public/", import.meta.url);
-
-const normaliseTitle = (title: string) =>
-  title
-    .toLowerCase()
-    .replace(/#\d+/g, "")
-    .replace(/\bmeetup\b/g, "")
-    .replace(/[^\p{L}\p{N}]+/gu, " ")
-    .trim();
-
-const eventId = (l: SourceListing) =>
-  createHash("sha1")
-    .update(`${normaliseTitle(l.title)}|${sydneyDate(new Date(l.start))}`)
-    .digest("hex")
-    .slice(0, 12);
 
 function inScope(l: SourceListing, now: Date) {
   const start = new Date(l.start);
@@ -31,38 +17,22 @@ function inScope(l: SourceListing, now: Date) {
   );
 }
 
+async function readOverrides(): Promise<Overrides> {
+  try {
+    return JSON.parse(
+      await readFile(new URL("./overrides.json", import.meta.url), "utf8"),
+    ) as Overrides;
+  } catch {
+    return {};
+  }
+}
+
 async function readPrevious(): Promise<Event[]> {
   try {
     return JSON.parse(await readFile(new URL("events.json", OUT), "utf8")) as Event[];
   } catch {
     return [];
   }
-}
-
-/** Merge listings with the same id. Fuzzy matching + overrides.json come later. */
-function dedupe(listings: SourceListing[], rankOf: Map<string, number>): Event[] {
-  const groups = new Map<string, SourceListing[]>();
-  for (const l of listings) {
-    const id = eventId(l);
-    groups.set(id, [...(groups.get(id) ?? []), l]);
-  }
-  return [...groups].map(([id, group]) => {
-    const sorted = group.toSorted(
-      (a, b) => (rankOf.get(a.source) ?? 9) - (rankOf.get(b.source) ?? 9),
-    );
-    const best = sorted[0];
-    return {
-      id,
-      title: best.title,
-      start: best.start,
-      end: best.end,
-      allDay: best.allDay,
-      venue: sorted.find((l) => l.venue)?.venue,
-      primaryUrl: best.url,
-      // Same event can appear in two feeds of one source; keep each URL once.
-      sources: [...new Map(sorted.map((l) => [l.url, { name: l.source, url: l.url }])).values()],
-    };
-  });
 }
 
 const csvCell = (v: string | number | undefined) => {
@@ -128,6 +98,7 @@ async function main() {
   const events = dedupe(
     listings.filter((l) => inScope(l, now)),
     rankOf,
+    await readOverrides(),
   ).toSorted((a, b) => a.start.localeCompare(b.start));
 
   const sourceNames = [...new Set(events.flatMap((e) => e.sources.map((s) => s.name)))];

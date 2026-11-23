@@ -43,6 +43,12 @@ export const luma: Adapter<string[]> = {
           allDay: e.allDay,
           venue: e.location && !e.location.startsWith("http") ? e.location : undefined,
           url: `https://luma.com/event/${eventId}`,
+          // A non-Luma URL in LOCATION is the same event on another platform: a free,
+          // exact cross-source match for dedupe.
+          links:
+            e.location?.startsWith("http") && !/luma\.com|lu\.ma/.test(e.location)
+              ? [e.location]
+              : undefined,
           curated: FEEDS[i].curated,
         });
       }

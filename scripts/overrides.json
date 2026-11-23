@@ -1,0 +1,5 @@
+{
+  "$comment": "Manual dedupe fixes. Use event ids (or mergedFrom ids) from public/events.json. merge: force these to be one event. separate: never merge this pair.",
+  "merge": [],
+  "separate": []
+}

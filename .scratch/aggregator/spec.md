@@ -91,9 +91,14 @@ type Event = {
 
 ## Deduplication (entity resolution)
 
-- Two listings are the same event if they fall on the **same Sydney calendar date** and their **normalised titles** match closely (lowercase, strip punctuation, strip noise like "meetup", "#12").
-- `overrides.json` forces a merge or a split by event `id`.
-- `primaryUrl` comes from a fixed source priority: organiser's own site > RSVP platform (Luma, Meetup) > aggregators. The highest-ranked source in a merged group wins; the rest become source icons.
+Implemented in `scripts/dedupe.ts` (union-find over listings), tested in `scripts/dedupe.test.ts`.
+
+- **Exact**: same normalised title + Sydney date (listing key = hash of both); or an explicit cross-link (a Luma `LOCATION` pointing at Eventbrite/Humanitix/Meetup).
+- **Fuzzy**, all must hold: different sources; same Sydney date; starts within 90 min (all-day matches any time); titles Dice ≥ 0.8 on character bigrams, or one title's words (≥3) all inside the other's.
+  - Title similarity alone is not enough: in real data "Turing @ NeurIPS: After Hours" vs "Cartesia x NeurIPS: After Hours" scored 0.73 and are different events.
+- **Overrides**: `scripts/overrides.json` `merge` / `separate` pairs of listing keys (event `id` or `mergedFrom` entries in `events.json`). `separate` blocks that pair only, not transitive merges.
+- Cross-links also appear as source pills even when the linked listing was filtered out.
+- `primaryUrl` comes from a fixed source priority (all current sources are rank 1, so the first adapter wins ties).
 
 ## Failure handling (graceful degradation)
 
