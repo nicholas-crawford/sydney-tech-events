@@ -1,6 +1,8 @@
 import { defineConfig } from "vite-plus";
 
 export default defineConfig({
+  // Relative asset URLs so the same build works at / locally and /sydney-tech-events/ on GitHub Pages.
+  base: "./",
   staged: {
     "*": "vp check --fix",
   },

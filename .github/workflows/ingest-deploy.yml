@@ -1,0 +1,68 @@
+name: Ingest and deploy
+
+on:
+  # Weekly: Monday ~6am Sydney (Sunday 19:00 UTC; 7am during AEST).
+  schedule:
+    - cron: "0 19 * * 0"
+  # Manual run from the Actions tab (e.g. right before a demo).
+  workflow_dispatch:
+  # Redeploy the page when code changes.
+  push:
+    branches: [main]
+
+permissions:
+  contents: write # commit refreshed data
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7.0.1
+
+      - uses: voidzero-dev/setup-vp@v1.22.0
+        with:
+          node-version: "24"
+          cache: true
+
+      # Only scrape on schedule/manual runs; pushes just redeploy existing data.
+      - name: Ingest events
+        if: github.event_name != 'push'
+        run: vpx ./scripts/ingest.ts
+
+      # Git scraping: commit the data so history shows what changed each week.
+      # Commits made with GITHUB_TOKEN don't trigger another push run, so no loop.
+      - name: Commit data
+        if: github.event_name != 'push'
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add public/events.json public/events.csv public/summary.json
+          if git diff --cached --quiet; then
+            echo "No data changes"
+          else
+            git commit --no-verify -m "data: weekly ingest $(date -u +%F)"
+            git push
+          fi
+
+      - run: vp run build
+
+      - uses: actions/configure-pages@v6.0.0
+      - uses: actions/upload-pages-artifact@v5.0.0
+        with:
+          path: dist
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v5.0.1
