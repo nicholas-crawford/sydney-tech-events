@@ -90,21 +90,6 @@
     ]
   },
   {
-    "id": "0f5877ae5124",
-    "title": "Material Needs of AI Hardware Industry Roundtable",
-    "start": "2026-11-25T02:30:00.000Z",
-    "end": "2026-11-25T04:30:00.000Z",
-    "allDay": false,
-    "venue": "Cicada Innovations, 4 Cornwallis Street, Eveleigh, NSW 2015, Eveleigh",
-    "primaryUrl": "https://www.eventbrite.com.au/e/material-needs-of-ai-hardware-industry-roundtable-tickets-2004200632042",
-    "sources": [
-      {
-        "name": "Eventbrite",
-        "url": "https://www.eventbrite.com.au/e/material-needs-of-ai-hardware-industry-roundtable-tickets-2004200632042"
-      }
-    ]
-  },
-  {
     "id": "27ab620c3999",
     "title": "Grok Bot Sydney Meetup",
     "start": "2026-11-25T06:30:00.000Z",
@@ -172,21 +157,6 @@
       {
         "name": "Meetup",
         "url": "https://www.meetup.com/jracademy/events/317280598/"
-      }
-    ]
-  },
-  {
-    "id": "993f9fdbd448",
-    "title": "Semiconductors and AI: Edge AI",
-    "start": "2026-11-25T22:30:00.000Z",
-    "end": "2026-11-26T00:00:00.000Z",
-    "allDay": false,
-    "venue": "Cicada Innovations, 4 Cornwallis Street, Eveleigh, NSW 2015, Eveleigh",
-    "primaryUrl": "https://www.eventbrite.com.au/e/semiconductors-and-ai-edge-ai-tickets-1992538619649",
-    "sources": [
-      {
-        "name": "Eventbrite",
-        "url": "https://www.eventbrite.com.au/e/semiconductors-and-ai-edge-ai-tickets-1992538619649"
       }
     ]
   },
@@ -377,21 +347,6 @@
     ]
   },
   {
-    "id": "e4bbe9e82cc1",
-    "title": "AI Singularity Syndicate Monthly Meetup",
-    "start": "2026-11-27T07:00:00.000Z",
-    "end": "2026-11-27T09:30:00.000Z",
-    "allDay": false,
-    "venue": "Australian Catholic University, North Sydney Campus, 40 Edward Street, North Sydney, NSW 2060, North Sydney",
-    "primaryUrl": "https://www.eventbrite.com.au/e/ai-singularity-syndicate-monthly-meetup-tickets-2004177230046",
-    "sources": [
-      {
-        "name": "Eventbrite",
-        "url": "https://www.eventbrite.com.au/e/ai-singularity-syndicate-monthly-meetup-tickets-2004177230046"
-      }
-    ]
-  },
-  {
     "id": "d3834dca8484",
     "title": "HUMAN-IN-LOOP ISN’T ENOUGH | Turn Principles into Controls You Can Actually Use",
     "start": "2026-11-27T08:00:00.000Z",
@@ -445,21 +400,6 @@
       {
         "name": "Luma",
         "url": "https://luma.com/event/evt-3Lz0ROwMhS1HDPz"
-      }
-    ]
-  },
-  {
-    "id": "91e66d3daeb5",
-    "title": "AI for Smart Grids and Renewable Energy Systems Workshop",
-    "start": "2026-12-01T02:00:00.000Z",
-    "end": "2026-12-01T06:00:00.000Z",
-    "allDay": false,
-    "venue": "University of Wollongong (UOW), Sydney CBD campus, 201 Sussex Street, #Level 2, Sydney, NSW 2000, Sydney",
-    "primaryUrl": "https://www.eventbrite.com/e/ai-for-smart-grids-and-renewable-energy-systems-workshop-tickets-2004093869713",
-    "sources": [
-      {
-        "name": "Eventbrite",
-        "url": "https://www.eventbrite.com/e/ai-for-smart-grids-and-renewable-energy-systems-workshop-tickets-2004093869713"
       }
     ]
   },
@@ -594,6 +534,21 @@
       {
         "name": "Meetup",
         "url": "https://www.meetup.com/ailearnersclub/events/317268040/"
+      }
+    ]
+  },
+  {
+    "id": "2a3e13bcebbe",
+    "title": "Conference on Green Building and Sustainable Civil Engineering",
+    "start": "2026-12-06T02:00:00.000Z",
+    "end": "2026-12-09T09:00:00.000Z",
+    "allDay": false,
+    "venue": "Sydney, Australia, Sydney, Sydney, NSW 2000, Sydney",
+    "primaryUrl": "https://www.eventbrite.com/e/conference-on-green-building-and-sustainable-civil-engineering-tickets-1988402644837",
+    "sources": [
+      {
+        "name": "Eventbrite",
+        "url": "https://www.eventbrite.com/e/conference-on-green-building-and-sustainable-civil-engineering-tickets-1988402644837"
       }
     ]
   },
