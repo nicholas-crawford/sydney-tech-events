@@ -63,6 +63,16 @@ const platformOf = (url: string) => {
   return PLATFORMS.find(([re]) => re.test(host))?.[1] ?? host;
 };
 
+/**
+ * One pill per source. A source can list the same event twice (Luma under two event ids),
+ * and two "Luma" links read as noise. First wins: listings come first, sorted by rank, so
+ * the kept URL is the primary one, and a real listing beats a cross-link to the same site.
+ */
+function onePerSource(sources: { name: string; url: string }[]) {
+  const seen = new Set<string>();
+  return sources.filter((s) => !seen.has(s.name) && seen.add(s.name));
+}
+
 /** Sørensen–Dice coefficient over character bigrams: 1 = identical, 0 = nothing shared. */
 export function dice(a: string, b: string) {
   const grams = (s: string) => {
@@ -186,25 +196,14 @@ export function dedupe(
       allDay: best.allDay,
       venue: sorted.map((i) => listings[i].venue).find(Boolean),
       primaryUrl: best.url,
-      // Same event can appear in two feeds of one source; keep each URL once.
-      // Cross-links count as sources too: if Luma says "this is also on Eventbrite",
-      // show that link even when Eventbrite's own listing was filtered out.
-      sources: [
-        ...new Map([
-          ...sorted.map(
-            (i) =>
-              [
-                normaliseUrl(listings[i].url),
-                { name: listings[i].source, url: listings[i].url },
-              ] as const,
-          ),
-          ...sorted.flatMap((i) =>
-            (listings[i].links ?? []).map(
-              (url) => [normaliseUrl(url), { name: platformOf(url), url }] as const,
-            ),
-          ),
-        ]).values(),
-      ],
+      sources: onePerSource([
+        ...sorted.map((i) => ({ name: listings[i].source, url: listings[i].url })),
+        // Cross-links count as sources too: if Luma says "this is also on Eventbrite",
+        // show that link even when Eventbrite's own listing was filtered out.
+        ...sorted.flatMap((i) =>
+          (listings[i].links ?? []).map((url) => ({ name: platformOf(url), url })),
+        ),
+      ]),
       ...(memberKeys.length > 1 ? { mergedFrom: memberKeys } : {}),
     };
   });

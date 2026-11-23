@@ -92,6 +92,20 @@ describe("dedupe", () => {
     ]);
   });
 
+  it("shows one pill per source when a source lists the same event twice", () => {
+    const first = listing({
+      title: "FUN Sydney: The Failures Behind The Headlines",
+      url: "https://luma.com/event/evt-a",
+    });
+    const second = listing({
+      title: "FUN Sydney: The Failures Behind The Headlines",
+      url: "https://luma.com/event/evt-b",
+    });
+    const [event] = dedupe([first, second], rank);
+    expect(event.sources).toEqual([{ name: "Luma", url: "https://luma.com/event/evt-a" }]);
+    expect(event.primaryUrl).toBe("https://luma.com/event/evt-a");
+  });
+
   it("respects a 'separate' override", () => {
     const a = listing({ source: "Meetup", title: "Sydney Monthly Social Tech Meetup!" });
     const b = listing({ source: "Eventbrite", title: "Sydney Monthly Social Tech Meetup" });
